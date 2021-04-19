@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;700&display=swap');
+
+
+.header {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    /* background-color: aqua; */
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  
+
+  .heading_image{
+
+    width:14%;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+
+  h3 {
+    font-family: 'Cedarville Cursive', cursive;
+    margin: 0;
+    color:rgb(247, 247, 247);
+    font-size:40px;
+  }
+  
+  .search_bar {
+    width: 30%;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    color:black;
+    border-radius: 100px;
+    background-color:rgba(252, 248, 248, 0.445);
+
+  }
+
+  .search_bar:focus{
+    background-color: white;
+    border:none;
+    outline:none;
+  }
+  
+  .nav{
+      width:25%;
+      display:flex;
+      justify-content: space-between;
+  }
+
+  .link{
+    text-decoration: none;
+    color:white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;
+    transition: all .5s;
+  }
+  .link:hover{
+    transform:translateY(-10%);
+    text-decoration: underline;
+  }
+  .logo{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+  }
+
+  ::-webkit-input-placeholder{
+    color:black;
+    font-size:20px;
+    font-weight:600;
+    
+}

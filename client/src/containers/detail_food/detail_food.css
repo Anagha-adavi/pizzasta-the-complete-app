@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+.detailed_body{
+      padding:10% 20px;
+      background-image: linear-gradient(to bottom,rgba(2, 14, 65, 0.685),rgba(5, 30, 143, 0.664)),url("../../Images/pasta_3.jpg");
+      margin:0;
+      box-sizing:border-box;
+}
+
+
+.title ,.heading1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-size:40px;
+    font-weight:600;
+    text-align:center;
+    color:white;
+    transition:all 1s;
+    text-decoration: underline;
+    letter-spacing: 3px;
+
+}
+
+
+
+.pic_container{
+    width:400px;
+    height:400px;
+    margin:30px auto 10px auto;
+}
+
+.pic{
+    width:100%;
+    height:100%;
+    border-radius: 50%;
+}
+
+.desc
+{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size:30px;
+    font-weight:600;
+    text-align:center;
+    color:white;
+    margin-top:60px;
+    transition:all 1s;
+}
+
+
+
+.heading{
+    font-family: 'IBM Plex Mono', monospace;
+    color:white;
+    font-size: 30px;
+    margin:20px 0px 20px 0px;
+
+}
+
+.ingre_cont
+{
+    border:3px solid white;
+    margin:40px auto;
+    width:40%;
+    padding:20px;
+
+}
+
+.ing_container{
+    padding:20px;
+}
+.ing{
+    color:rgb(2, 14, 65);
+    font-weight:600;
+    padding:10px;
+    background-color:white;
+    margin:20px auto;
+    width:90%;
+    transform:skew(-20deg);
+    transition:all .2s;
+    letter-spacing: 3px;
+    
+}
+
+
+.ing:hover{
+    transform:skew(0deg);
+    color:white;
+    background-color:rgb(2, 14, 65);
+
+}
+
+
+.images{
+    width:95%;
+    height:500px;
+    margin :50px auto;
+    display:flex;
+    flex-direction: row;
+
+}
+
+.img{
+    width:48%;
+    height:80%;
+    transition:all .6s;
+}
+
+.img:hover{
+    opacity:.7;
+    background-color:rgb(109, 109, 238);
+}
+
+.img:first-child{
+    margin-right:20px;
+}
+
+.review_body{
+    width:98%;
+    margin:30px auto;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap:10px;
+    padding:20px;
+    background-color: rgba(255, 255, 255, 0.541);
+    transform: skew(-10deg);
+
+}
+
+.review_box{
+    background-color:rgb(2, 14, 65);
+    color:white;
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    font-weight: 600;
+    font-family: 'IBM Plex Mono', monospace;
+
+}

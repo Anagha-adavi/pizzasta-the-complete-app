@@ -1,0 +1,11 @@
+.explore_body{
+    /* height:100vh; */
+    background-image: url("../../Images/pasta_cover_1.jpg");
+    /* background-repeat: no-repeat; */
+    background-size:100%;
+    display:flex;
+    flex-direction: column;
+    align-content: space-around;
+    overflow-y: scroll;
+    padding:100px 0px;
+}
