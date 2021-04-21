@@ -16,10 +16,9 @@ mongoose
   });
 
 //server work
-const port = 8080;
 app.listen(port, (err) => {
   if (err) {
     console.log(err);
   }
-  console.log(`Listening to the server on port ${port}...`);
+  console.log(`Listening to the server on port ${process.env.PORT}...`);
 });
