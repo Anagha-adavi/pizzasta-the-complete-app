@@ -63,8 +63,8 @@ class detail_food extends Component {
                                 )}
                             </div>)}
                             <h2 style={{color:"white"}}>Only for {this.state.food.price} /-</h2>
-                            <div style={{margin:"2rem auto", width:"15%"}}>
-                            <Link to={`/food/${this.state.food.id}/cart`} style={{margin:"2rem auto" ,textDecoration:"none",backgroundColor:"white" ,color:"rgb(2, 14, 65)" ,padding:"1rem" , fontSize:"1.5rem"}}>Add to cart</Link>
+                            <div className={classes.cart_btn_container} >
+                            <Link to={`/food/${this.state.food.id}/cart`} className={classes.cart_btn}>Add to cart</Link>
                             </div>
                     </div>
                     </div>

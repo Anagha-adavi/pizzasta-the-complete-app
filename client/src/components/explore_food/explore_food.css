@@ -5,7 +5,7 @@
     flex-direction:row;
     justify-content: space-between;
     margin:10px auto;
-    padding:20px;
+    padding:1.5rem;
     color:#fff;
     align-items:center;
     transition:all .5s;
@@ -30,7 +30,7 @@
 
 .food_heading{
     font-weight:600;
-    font-size:20px;
+    font-size:1.2rem;
     font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -53,7 +53,7 @@
     border:none;
     padding:10px;
     color:rgb(2, 14, 65);
-    font-size:20px;
+    font-size:1.2rem;
     transition:all .5s;
     border-radius:10px;
     text-decoration: none;
@@ -64,4 +64,26 @@
 
 .detail_btn:focus{
     outline:0;
+}
+
+@media screen and (max-width:1030px){
+    .food_box{
+        width:60%;
+        display:grid;
+        grid-template-columns: 1fr ;
+        background-color:rgba(5, 24, 112, 0.493);
+        grid-gap:1rem;
+        margin:1rem auto;
+        padding:1.5rem;
+        color:#fff;
+        align-items:center;
+        transition:all .5s;
+        font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .detail_btn{
+        margin:auto;
+        width:50%;
+        text-align:center;
+    }
 }

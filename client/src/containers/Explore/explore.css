@@ -9,3 +9,12 @@
     overflow-y: scroll;
     padding:100px 0px;
 }
+
+/* @media screen and (max-width:900px){
+    .explore_body{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+} */

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
 .detailed_body{
-      padding:10% 20px;
+      padding:10% 1.5rem 1rem 1.5rem;
       background-image: linear-gradient(to bottom,rgba(2, 14, 65, 0.685),rgba(5, 30, 143, 0.664)),url("../../Images/pasta_3.jpg");
       margin:0;
       box-sizing:border-box;
@@ -10,22 +10,23 @@
 
 .title ,.heading1{
     font-family: 'Cedarville Cursive', cursive;
-    font-size:40px;
+    font-size:2.5rem;
     font-weight:600;
     text-align:center;
     color:white;
     transition:all 1s;
     text-decoration: underline;
     letter-spacing: 3px;
+    
 
 }
 
 
 
 .pic_container{
-    width:400px;
-    height:400px;
-    margin:30px auto 10px auto;
+    width:23rem;
+    height:23rem;
+    margin:2.2rem auto .8rem auto;
 }
 
 .pic{
@@ -37,11 +38,11 @@
 .desc
 {
     font-family: 'IBM Plex Mono', monospace;
-    font-size:30px;
+    font-size:2rem;
     font-weight:600;
     text-align:center;
     color:white;
-    margin-top:60px;
+    margin-top:4rem;
     transition:all 1s;
 }
 
@@ -50,29 +51,29 @@
 .heading{
     font-family: 'IBM Plex Mono', monospace;
     color:white;
-    font-size: 30px;
-    margin:20px 0px 20px 0px;
+    font-size: 2.2rem;
+    margin:1.2rem 0px 1.2rem 0px;
 
 }
 
 .ingre_cont
 {
     border:3px solid white;
-    margin:40px auto;
+    margin:2.3rem auto;
     width:40%;
-    padding:20px;
+    padding:1.5rem;
 
 }
 
 .ing_container{
-    padding:20px;
+    padding:1.5rem;
 }
 .ing{
     color:rgb(2, 14, 65);
     font-weight:600;
-    padding:10px;
+    padding:.8rem;
     background-color:white;
-    margin:20px auto;
+    margin:1.5rem auto;
     width:90%;
     transform:skew(-20deg);
     transition:all .2s;
@@ -115,11 +116,11 @@
 
 .review_body{
     width:98%;
-    margin:30px auto;
+    margin:2rem auto;
     display:grid;
     grid-template-columns: auto auto auto;
-    grid-gap:10px;
-    padding:20px;
+    grid-gap:.8rem;
+    padding:1.5rem;
     background-color: rgba(255, 255, 255, 0.541);
     transform: skew(-10deg);
 
@@ -128,7 +129,7 @@
 .review_box{
     background-color:rgb(2, 14, 65);
     color:white;
-    padding:30px;
+    padding:1.5rem;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -137,3 +138,119 @@
     font-family: 'IBM Plex Mono', monospace;
 
 }
+
+.cart_btn_container{
+    background-color: white;
+    width:30%;
+    margin:2rem auto;
+    text-align: center;
+    border:10px solid rgb(2, 14, 65) ;
+    
+}
+
+.cart_btn{
+    text-decoration:none;
+    color:rgb(2, 14, 65) ;
+    /* padding:1rem ; */
+    font-size:3.5rem;
+    margin:auto;
+    text-align: center;
+    width:100%;
+
+}
+
+@media screen and (max-width:1200px){
+    .ingre_cont{
+        width:60%;
+    }
+
+    .ing{
+        width:95%;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .ingre_cont{
+        width:80%;
+    }
+
+    .ing{
+        width:95%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .ingre_cont{
+        width:80%;
+    }
+
+    .ing{
+        width:95%;
+    }
+
+    .heading1,.title,.heading{
+    font-size: 2rem;
+    margin:1.5rem 0px 1.5rem 0px;
+
+    }
+
+    .ing_container{
+        padding:.8rem;
+    }
+
+}
+
+
+@media screen and (max-width:1000px){
+
+    .review_body{
+        grid-template-columns: auto auto;
+    }
+
+
+}
+
+@media screen and (max-width:700px){
+
+    .review_body{
+        grid-template-columns: auto ;
+        width:80%;
+        transform: skew(0deg);
+
+    }
+
+
+}
+
+
+@media screen and (max-width:450px){
+
+    .pic_container{
+        width:18rem;
+        height:18rem
+    }
+
+
+}
+
+@media screen and (max-width:1020px){
+
+    .cart_btn_container{
+        width:50%;
+       
+        
+    }
+
+}
+
+
+@media screen and (max-width:600px){
+
+    .cart_btn_container{
+        width:90%;
+      
+    }
+
+}
+

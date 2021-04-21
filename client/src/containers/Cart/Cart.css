@@ -14,21 +14,21 @@
 .box{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap:20%;
     overflow-y:scroll;
+    grid-gap:20%;
 }
 
 .cart_item_box{
-    color: rgb(2, 14, 65);
+    background-color: rgb(2, 14, 65);
     padding:1.5rem;
-    background-color:white;
+    color:white;
     font-weight:600;
 
 }
 
 .delete_btn{
-    color: white;
-    background-color: rgb(2, 14, 65);
+    background-color: white;
+    color: rgb(2, 14, 65);
     text-decoration: none;
     position:relative;
     padding:10px;
@@ -63,6 +63,71 @@ width:20%;
     background-color: white;
     color:rgb(2, 14, 65);
     margin-bottom:3rem;
+
+
+}
+
+
+@media  screen and (max-width:1150px){
+    .box{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-row-gap:10%;
+        grid-column-gap:3%;
+        
+    }
+}
+
+@media  screen and (max-width:1190px){
+    .sum_total{
+       
+        padding:2rem;
+        width:40%;
+        margin:3rem 0 3rem 0;
+        
+    }
+    
+    .price_total{
+       
+        padding:2rem;
+        width:40%;
+        margin :3rem  0 3rem 0;
+       
+    
+    
+    }
+}
+
+@media  screen and (max-width:600px){
+    .sum_total{
+       
+        padding:1rem;
+        width:45%;
+        margin:3rem 0 3rem 0;
+        
+    }
+    
+    .price_total{
+       
+        padding:1rem;
+        width:45%;
+        margin :3rem  0 3rem 0;
+    
+    
+    }
+}
+
+@media  screen and (max-width:400px){
+
+    .sum_total{
+        width:45%;
+        margin:4rem 0 3rem 0;  
+    }
+    
+    .price_total{  
+        width:45%;
+        margin :4rem  0 3rem 0;
+    }
 
 
 }

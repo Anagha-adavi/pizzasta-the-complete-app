@@ -3,7 +3,11 @@
     height:100vh;
     background-image: linear-gradient(to bottom,rgba(2, 14, 65, 0.411),rgba(5, 30, 143, 0.425)),url("../../Images/pizza.jpg");
     background-repeat: no-repeat;
-    background-size:100%;
+    background-size:cover;
+}
+
+.app_name_heading{
+    visibility:hidden;
 }
 
 .moto{
@@ -44,4 +48,77 @@
 
 .moto:hover{
     color:rgba(255, 255, 255, 0.507);
+}
+
+
+@media screen and (max-width:700px){
+    .moto{
+        display:none
+    }
+    .motos{
+        display:none
+    }
+
+    .home{
+        /* height:100vh; */
+        background-image: linear-gradient(to bottom,rgba(2, 14, 65, 0.411),rgba(5, 30, 143, 0.425)),url("../../Images/pizza.jpg");
+        /* background-repeat: repeat; */
+        background-size:cover;
+    }
+
+    .app_name_heading{
+        position:absolute;
+        top:30%;
+        left:20%;
+        font-size:6rem;
+        visibility:visible;
+    }
+}
+
+@media screen and (max-width:1050px){
+
+    .moto{
+        left:15%;
+    }
+
+    .motos{
+        left:20%;
+    }
+}
+
+@media screen and (max-width:950px){
+
+    .moto{
+        left:5%;
+    }
+
+    .motos{
+        left:10%;
+    }
+}
+
+@media screen and (max-width:750px){
+
+    .moto{
+        left:5%;
+        font-size: 2rem;
+
+    }
+
+    .motos{
+        left:0%;
+        font-size: 2rem;
+
+    }
+}
+
+@media screen and (max-width:460px){
+
+    .app_name_heading{
+        position:absolute;
+        top:30%;
+        left:10%;
+        font-size:5rem;
+        visibility:visible;
+    }
 }

@@ -1,23 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;700&display=swap');
 
 
-.header {
+.header_transparent{
     background-color: transparent;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-    padding: 10px;
-    font-size: 20px;
+    padding: .8rem;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
-    /* background-color: aqua; */
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
   }
 
+  .header_on_scroll{
+    background-color: rgb(3 ,3 ,56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: .8rem;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    align-content: center;
+    width: 100%;
+  }
   
 
   .heading_image{
@@ -55,7 +70,7 @@
   }
   
   .nav{
-      width:25%;
+      width:35%;
       display:flex;
       justify-content: space-between;
   }
@@ -82,4 +97,36 @@
     font-size:20px;
     font-weight:600;
     
+}
+
+@media screen and (max-width:1000px){
+  .nav{
+    width:45%;
+
+  }
+}
+
+
+@media screen and (max-width:700px){
+  .nav{
+    width:80%;
+    justify-content: space-around;
+
+  }
+
+  .app_name_heading{
+    display:none;
+  }
+}
+
+@media screen and (max-width:460px){
+
+  .header_transparent{
+    background-color: rgb(3 ,3 ,56);
+  }
+
+  .nav{
+    width:90%;
+  }
+
 }
