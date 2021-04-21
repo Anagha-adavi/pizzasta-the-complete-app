@@ -52,7 +52,7 @@ export const authInit=(credentials,type)=>{
         }
         catch(err){
             alert(err)
-            dispatch(authFail(err.response.msg))
+            dispatch(authFail(err))
         } 
     }
      
