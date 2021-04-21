@@ -24,7 +24,7 @@ const createAndSendToken = async (statusCode, user, res) => {
   };
 
   if (process.env.NODE_ENV === 'production') {
-    cookitOptions.secure = true;
+    cookieOptions.secure = true;
   }
 
   res.cookie('jwt', token, cookieOptions);

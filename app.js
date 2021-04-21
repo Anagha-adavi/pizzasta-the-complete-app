@@ -32,11 +32,19 @@ app.use('/api/v1/cart', cartRouter);
 app.use('/api/v1/order', orderRouter);
 
 //error handler for bad requests
-app.all('*', (req, res, next) => {
-  return next(
-    new AppError(`Cannot find route ${req.originalUrl} on this server`, 400)
-  );
-});
+// app.all('*', (req, res, next) => {
+//   return next(
+//     new AppError(`Cannot find route ${req.originalUrl} on this server`, 400)
+//   );
+// });
+
+if(process.env.NODE_ENV==='production')
+{
+    app.use(express.static('client/build'));
+    app.get('*',(req,res)=>{
+        res.sendFile(path.resolve(__dirname,'client','build','index.html'));
+    });
+}
 
 //global error handler
 app.use(globalErrorHandler);
