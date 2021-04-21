@@ -18,8 +18,10 @@ export const authSuccess=(user_id,user_token,user_role)=>{
 
 
 export const authLogout=()=>{
-    localStorage.removeItem('token');
-    localStorage.removeItem('userId');
+    localStorage.removeItem('user_token');
+    localStorage.removeItem('user_id');
+    localStorage.removeItem('user_role');
+
     return {
         type:"AUTH_LOGOUT"
     }
