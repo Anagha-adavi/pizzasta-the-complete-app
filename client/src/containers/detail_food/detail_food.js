@@ -14,7 +14,7 @@ class detail_food extends Component {
 
     async componentDidMount(){
         Aos.init({duration:2000});
-        const result = await axios.get(`api/v1/food/${this.props.match.params.food_id}`)
+        const result = await axios.get(`/api/v1/food/${this.props.match.params.food_id}`)
         this.setState({food:result.data.data.food})
     }
     render() {
