@@ -11,7 +11,7 @@ class Navigation extends Component {
     }
 
     listenScrollEvent = e => {
-        if (window.scrollY > 30) {
+        if (window.scrollY > -1) {
           this.setState({color:" rgb(3, 3, 56)"})
         } 
         else{

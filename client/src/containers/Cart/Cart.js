@@ -8,8 +8,8 @@ class Cart extends PureComponent {
 
     state={
         cartItems:[],
-        totalItemsInCart:null,
-        totalPrice:null,
+        totalItemsInCart:0,
+        totalPrice:0,
         request_made:false,
         done_creation:false
     }
@@ -35,6 +35,9 @@ class Cart extends PureComponent {
                             done_creation:true
 
                         })
+                }
+                else{
+                    this.setState({...this.state,request_made:true})
                 }
         }
         else
@@ -117,14 +120,13 @@ class Cart extends PureComponent {
                         <Loader/>
                     </div>):
                     <div className={classes.container}>
-                        {console.log(this.state,"after creation")}
                         <div className={classes.summary}>
                             <div className={classes.sum_total}>Total item on cart : {this.state.totalItemsInCart} </div>
                             <div className={classes.price_total}>Total Price : {this.state.totalPrice} /-</div>
                         </div>
                         
                         <div className={classes.box}>
-                        {   this.state.cartItems.length===0 ?<div> Your Cart feels light  </div>:
+                        {   this.state.cartItems.length===0 ?<div style={{color:"white",textAlign:"enter"}}> Your Cart feels light  </div>:
                             this.state.cartItems.map((item)=>{
                                     return (
                                         <div className={classes.cart_item_box}>

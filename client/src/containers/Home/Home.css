@@ -14,8 +14,9 @@
 
     text-align: center;
     position:absolute;
-    top:45%;
-    left:30%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
     text-decoration: none;
     color:white;
     text-shadow: 1rem;
@@ -75,7 +76,7 @@
     }
 }
 
-@media screen and (max-width:1050px){
+/* @media screen and (max-width:1050px){
 
     .moto{
         left:15%;
@@ -84,9 +85,9 @@
     .motos{
         left:20%;
     }
-}
+} */
 
-@media screen and (max-width:950px){
+/* @media screen and (max-width:950px){
 
     .moto{
         left:5%;
@@ -95,29 +96,32 @@
     .motos{
         left:10%;
     }
-}
+} */
 
-@media screen and (max-width:750px){
+/* @media screen and (max-width:750px){
 
     .moto{
-        left:5%;
+         left:5%; 
         font-size: 2rem;
+        transform: ;
 
     }
 
     .motos{
-        left:0%;
+         left:0%; 
         font-size: 2rem;
 
     }
-}
+} */
 
 @media screen and (max-width:460px){
 
     .app_name_heading{
         position:absolute;
-        top:30%;
-        left:10%;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+
         font-size:5rem;
         visibility:visible;
     }

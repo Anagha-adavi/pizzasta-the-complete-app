@@ -13,9 +13,14 @@ class detail_food extends Component {
     }
 
     async componentDidMount(){
-        Aos.init({duration:2000});
+        console.log(this.props.match)
         const result = await axios.get(`/api/v1/food/${this.props.match.params.food_id}`)
+        // const result=await fetch(`http://localhost:8080/api/v1/food/${this.props.match.params.food_id}`,{
+        //     method:"GET"
+        // })
+        console.log(result)
         this.setState({food:result.data.data.food})
+        // console.log(result)
     }
     render() {
         return (

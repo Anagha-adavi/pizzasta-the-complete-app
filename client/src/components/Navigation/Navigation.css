@@ -2,8 +2,8 @@
 
 
 .header_transparent{
-    background-color: transparent;
-    position: fixed;
+  background-color: rgb(3 ,3 ,56);
+      position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
